@@ -111,7 +111,7 @@ public class Time {
      * @param time an object of the Time class whose values would be added
      * @return the caller object with the updated time values
      */
-    public String add(Time time)
+    public void add(Time time)
     {
         sec += time.getSec();
         min += time.getMin();
@@ -130,6 +130,5 @@ public class Time {
         {
             hour = hour % 24;
         }
-        return toString();
     }
 }
